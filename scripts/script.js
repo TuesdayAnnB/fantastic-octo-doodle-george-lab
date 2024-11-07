@@ -13,5 +13,6 @@ $.getJSON("https://tuesdayannb.github.io/TuesdayAnnB/class-data.json", function(
  }
 });
 //having trouble with the whole 'looping 3 times over' thing.
+//Update: it was an HTML issue. $("div") apparently inlcudes the header and footer, not just the generic div tags.
 
 
