@@ -2,13 +2,13 @@
 
 
 $.getJSON("https://tuesdayannb.github.io/TuesdayAnnB/class-data.json", function(data){
-  $("div").empty();
   for (var i = 0; i < data.length; i++) {
     objvalues = (Object.values(data[i]));
     $.each(objvalues, function(key, value){
-      $("div").append(value + " ");
+      $("#textbox").append(value + " ");
     } );
-      $("div").append("<br>");
+
+      $("#textbox").append("<br>");
       console.log("<br> loop " + i + "<br>");
  }
 });
